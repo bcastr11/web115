@@ -93,4 +93,5 @@ footer{
     width: 100%;
     background-color: #C4A484;
     text-align: center;
+    position: sticky;
 }
