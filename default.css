@@ -3,8 +3,9 @@ body {
     color: #4B3F2F;
     font-family: "Gill Sans", sans-serif;
     font-size: 25px;
-    margin: 0;
     padding-bottom: 100px;
+    margin: 0 auto;
+    
 }
 
 main {
@@ -29,7 +30,8 @@ p, .fontlist, .intro {
     border-width: 5px;
     border-radius: 25px;
     padding: 25px 75px;
-    margin: 20px 0;
+    margin: 20px auto;
+    
 }
 
 .navbar ul {
@@ -162,14 +164,4 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     color: #eed9c4;
-}
-
-#loopresult, #fizzbuzzresult {
-    background: #faf0e6;
-    border-style: double;
-    border-width: 5px;
-    border-radius: 25px;
-    padding: 25px;
-    margin-bottom: 25px;
-    text-align: center;
 }
