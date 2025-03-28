@@ -5,7 +5,6 @@ body {
     font-size: 25px;
     padding-bottom: 100px;
     margin: 0 auto;
-    
 }
 
 main {
@@ -31,7 +30,6 @@ p, .fontlist, .intro {
     border-radius: 25px;
     padding: 25px 75px;
     margin: 20px auto;
-    
 }
 
 .navbar ul {
@@ -49,8 +47,9 @@ p, .fontlist, .intro {
 }
 
 .navbar a:hover {
-    color: #eed9c4;
+    color: #FFFFFF;
     background-color: #4B3F2F;
+    text-decoration: underline;
 }
 
 .navbar li {
@@ -72,7 +71,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #eed9c4;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 
 header {
@@ -163,5 +163,6 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover {
-    color: #eed9c4;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
