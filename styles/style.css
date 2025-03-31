@@ -3,7 +3,7 @@ body {
     color: #4B3F2F;
     font-family: "Gill Sans", sans-serif;
     font-size: 25px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@ img {
     margin-right: auto;
 }
 
-p, .fontlist, .intro {
+p, .FONTLIST, .ABC123 {
     background: #faf0e6;
     border-style: double;
     border-width: 5px;
@@ -177,12 +177,18 @@ footer nav ul li a:hover {
     text-align: center;
 }
 
-#loopresult, #fizzbuzzresult {
-    background: #faf0e6;
-    border-style: double;
-    border-width: 5px;
-    border-radius: 25px;
-    padding: 25px;
-    margin-bottom: 25px;
-    text-align: center;
+.LINKS a {
+    color: #4B3F2F;
+    text-decoration: none;
 }
+
+.LINKS a:visited {
+    color: #6B5D4D;
+}
+
+.LINKS a:hover {
+    color: #8B7D6D;
+    text-decoration: underline;
+}
+
+
