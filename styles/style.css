@@ -179,7 +179,7 @@ footer nav ul li a:hover {
 
 .LINKS a {
     color: #4B3F2F;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .LINKS a:visited {
@@ -190,5 +190,4 @@ footer nav ul li a:hover {
     color: #8B7D6D;
     text-decoration: underline;
 }
-
 
