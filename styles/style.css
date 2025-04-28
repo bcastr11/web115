@@ -125,24 +125,13 @@ footer {
     left: 0;
     width: 100%;
     background-color: #C4A484;
-    text-align: center;
-    padding: 25px 0;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    border: none;
-}
-
-footer p {
-    margin: 0;
-    padding: 0;
-    color: #4B3F2F;
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-    border: none;
-    background: none;
+    min-height: 180px;
+    box-sizing: border-box;
 }
 
 footer nav ul {
@@ -153,6 +142,16 @@ footer nav ul {
     justify-content: center;
     gap: 20px;
     width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: #4B3F2F;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    background: none;
     border: none;
 }
 
