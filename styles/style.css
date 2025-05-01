@@ -34,26 +34,30 @@ p, .FONTLIST, .ABC123 {
 
 .navbar ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
-    overflow: hidden;
-}
-
-.navbar a {
-    color: #4B3F2F;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-}
-
-.navbar a:hover {
-    color: #FFFFFF;
-    background-color: #4B3F2F;
-    text-decoration: underline;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #C4A484;
 }
 
 .navbar li {
-    float: left;
+    position: relative;
+}
+
+.navbar li a {
+    display: block;
+    color: #4B3F2F;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.navbar li a:hover {
+    background-color: #4B3F2F;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 
 nav {
@@ -167,14 +171,25 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-#loopresult, #fizzbuzzresult {
-    background: #faf0e6;
-    border-style: double;
-    border-width: 5px;
-    border-radius: 25px;
-    padding: 25px;
-    margin-bottom: 25px;
+/* Center the FizzBuzz output */
+#output {
     text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Style the ordered list to be centered */
+#output ol {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    list-style-position: inside; /* Numbers stay aligned with centered content */
+}
+
+/* Optional: Add some styling to list items */
+#output ol li {
+    padding: 5px 0;
 }
 
 .LINKS a {
@@ -197,4 +212,46 @@ figure {
 
 figcaption{
     font-style: italic
+}
+
+ /* DROPDOWN STYLES */
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #faf0e6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+    border: 1px solid #C4A484;
+}
+
+.dropdown-content a {
+    color: #4B3F2F;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #E6D8C4;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #4B3F2F;
+    color: #FFFFFF;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* HIGHLIGHT MAIN BUTTON WHEN DROPDOWN IS OPEN */
+.dropdown:hover .dropbtn {
+    background-color: #4B3F2F;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
