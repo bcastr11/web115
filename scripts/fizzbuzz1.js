@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Get count via prompt with 140 maximum
-        const count = prompt('How high do you want to count, ' + firstName + '? (1-140)', '140');
+        // Get count via prompt with 140 as maximum
+        const count = prompt('How many numbers to generate (1-140)?', '140');
         let maxNumber = 140; // Default maximum
         
         if (count) {
@@ -33,23 +33,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        // Build greeting with name
+        // Build greeting
         let fullName = firstName;
-        if (middleInitial) fullName += ' ' + middleInitial + '.';
-        fullName += ' ' + lastName;
-        document.getElementById('greeting').textContent = 'Welcome to Bold Cardinal, ' + fullName + '!';
+        if (middleInitial) fullName += ` ${middleInitial}.`;
+        fullName += ` ${lastName}`;
+        document.getElementById('greeting').textContent = `Welcome to Bold Cardinal FizzBuzz, ${fullName}!`;
         
-        // Clear previous output
+        // Generate FizzBuzz output
         outputDiv.innerHTML = '';
-        
-        // Create numbered list
         const ol = document.createElement('ol');
         
-        // Generate list items (capped at 140)
         for (let i = 1; i <= maxNumber; i++) {
             const li = document.createElement('li');
-            const isEven = i % 2 === 0;
-            li.textContent = 'Build Different - the number is ' + (isEven ? 'even' : 'odd');
+            let outputText = '';
+            
+            if (i % 15 === 0) {
+                outputText = 'Build Different & Grow!';
+            } else if (i % 3 === 0) {
+                outputText = 'Build Different';
+            } else if (i % 5 === 0) {
+                outputText = 'Grow!';
+            }
+            
+            li.textContent = outputText; // Blank for non-multiples
             ol.appendChild(li);
         }
         
