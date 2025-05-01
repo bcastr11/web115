@@ -171,23 +171,23 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Center the FizzBuzz output */
+
 #output {
     text-align: center;
     margin: 20px auto;
     max-width: 600px;
 }
 
-/* Style the ordered list to be centered */
+
 #output ol {
     display: inline-block;
     text-align: left;
     margin: 0 auto;
     padding: 0;
-    list-style-position: inside; /* Numbers stay aligned with centered content */
+    list-style-position: inside; 
 }
 
-/* Optional: Add some styling to list items */
+
 #output ol li {
     padding: 5px 0;
 }
@@ -214,7 +214,7 @@ figcaption{
     font-style: italic
 }
 
- /* DROPDOWN STYLES */
+
  .dropdown-content {
     display: none;
     position: absolute;
@@ -244,12 +244,12 @@ figcaption{
     color: #FFFFFF;
 }
 
-/* SHOW DROPDOWN ON HOVER */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* HIGHLIGHT MAIN BUTTON WHEN DROPDOWN IS OPEN */
+
 .dropdown:hover .dropbtn {
     background-color: #4B3F2F;
     color: #FFFFFF;
