@@ -94,7 +94,7 @@ form {
     max-width: 600px;
     min-width: 400px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
 }
@@ -171,23 +171,23 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Center the FizzBuzz output */
+
 #output {
     text-align: center;
     margin: 20px auto;
     max-width: 600px;
 }
 
-/* Style the ordered list to be centered */
+
 #output ol {
     display: inline-block;
     text-align: left;
     margin: 0 auto;
     padding: 0;
-    list-style-position: inside; /* Numbers stay aligned with centered content */
+    list-style-position: inside; 
 }
 
-/* Optional: Add some styling to list items */
+
 #output ol li {
     padding: 5px 0;
 }
@@ -214,7 +214,7 @@ figcaption{
     font-style: italic
 }
 
- /* DROPDOWN STYLES */
+/* Header Dropdown */
  .dropdown-content {
     display: none;
     position: absolute;
@@ -244,14 +244,95 @@ figcaption{
     color: #FFFFFF;
 }
 
-/* SHOW DROPDOWN ON HOVER */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* HIGHLIGHT MAIN BUTTON WHEN DROPDOWN IS OPEN */
+
 .dropdown:hover .dropbtn {
     background-color: #4B3F2F;
     color: #FFFFFF;
     text-decoration: underline;
+}
+
+/* JADS Outline */
+
+.outline-container {
+    background: #faf0e6;
+    border: double 5px #4B3F2F;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.statement{
+    background: transparent;
+    border: none; 
+    padding: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.05em;
+}
+
+.dropdown-btn {
+    background-color: #C4A484;
+    color: #4B3F2F;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 8px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-btn::after {
+    content: "+";
+    font-size: 1.2em;
+}
+
+
+.dropdown-btnactive::after {
+    content: "-";
+}
+
+.dropdown-btn:hover {
+    background-color: #4B3F2F;
+    color: #FFFFFF;
+}
+
+.dropdown-container {
+    display: none;
+    padding: 10px 0 10px 20px;
+    background-color: rgba(244, 240, 230, 0.5);
+    border-left: 3px solid #C4A484;
+    margin-bottom: 10px;
+}
+
+.dropdown-container ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.dropdown-container li {
+    padding: 5px 0;
+    position: relative;
+    color: #4B3F2F;
+}
+
+.dropdown-container li::before {
+    color: #C4A484;
+    position: absolute;
+    left: -15px;
 }
