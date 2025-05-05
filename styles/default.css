@@ -336,3 +336,7 @@ figcaption{
     position: absolute;
     left: -15px;
 }
+
+span{
+    font-weight: normal;
+ }
