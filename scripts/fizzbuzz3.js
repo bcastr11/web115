@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         for (let i = 1; i <= maxNumber; i++) {
             const li = document.createElement('li');
-            const matches = mappings.filter(m => i % m.divisor === 0);
+            const matches = mappings.filter((m) => i % m.divisor === 0);
             
-            li.textContent = (matches.length > 0 ? ` ${matches.map(m => m.word).join(' & ')}` : '');
+            li.textContent = (matches.length > 0 ? ` ${matches.map((m) => m.word).join(' & ')}` : '');
             
             ol.appendChild(li);
         }
