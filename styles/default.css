@@ -25,9 +25,6 @@ img {
 
 p, .FONTLIST, .ABC123 {
     background: #faf0e6;
-    border-style: double;
-    border-width: 5px;
-    border-radius: 25px;
     padding: 25px 75px;
     margin: 20px auto;
 }
@@ -87,9 +84,6 @@ header {
 
 form {
     background: #faf0e6;
-    border-style: double;
-    border-width: 5px;
-    border-radius: 25px;
     padding: 20px;
     max-width: 600px;
     min-width: 400px;
@@ -192,13 +186,13 @@ footer nav ul li a:hover {
     padding: 5px 0;
 }
 
-.LINKS a {
+a {
     color: #4B3F2F;
     text-decoration: underline;
 }
 
 
-.LINKS a:hover {
+a:hover {
     color: #8B7D6D;
     text-decoration: underline;
 }
@@ -257,20 +251,7 @@ figcaption{
 
 .outline-container {
     background: #faf0e6;
-    border: double 5px #4B3F2F;
-    border-radius: 25px;
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 800px;
-}
 
-.statement{
-    background: #faf0e6;
-    border: none; 
-    padding: 25px 75px;
-    margin: 20px auto;
-    text-align: left;
-    font-size: 25px;
 }
 
 .dropdown-btn {
@@ -286,7 +267,6 @@ figcaption{
     font-size: 1.1em;
     font-weight: bold;
     margin: 8px 0;
-    border-radius: 4px;
     transition: all 0.3s ease;
     display: flex;
     justify-content: space-between;
@@ -321,9 +301,10 @@ figcaption{
 }
 
 .dropdown-container li {
-    padding: 5px 0;
     position: relative;
     color: #4B3F2F;
+    
+    
 }
 
 .dropdown-container li::before {
