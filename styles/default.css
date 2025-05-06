@@ -197,9 +197,6 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-.LINKS a:visited {
-    color: #6B5D4D;
-}
 
 .LINKS a:hover {
     color: #8B7D6D;
@@ -273,7 +270,7 @@ figcaption{
     padding: 15px;
     margin: 10px 0;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     font-size: 1.05em;
 }
 
