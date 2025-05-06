@@ -265,13 +265,12 @@ figcaption{
 }
 
 .statement{
-    background: transparent;
+    background: #faf0e6;
     border: none; 
-    padding: 15px;
-    margin: 10px 0;
-    font-weight: bold;
+    padding: 25px 75px;
+    margin: 20px auto;
     text-align: left;
-    font-size: 1.05em;
+    font-size: 25px;
 }
 
 .dropdown-btn {
@@ -296,7 +295,7 @@ figcaption{
 
 .dropdown-btn::after {
     content: "+";
-    font-size: 1.2em;
+    font-size: 25px;
 }
 
 
@@ -313,7 +312,6 @@ figcaption{
     display: none;
     padding: 10px 0 10px 20px;
     background-color: rgba(244, 240, 230, 0.5);
-    border-left: 3px solid #C4A484;
     margin-bottom: 10px;
 }
 
@@ -333,7 +331,3 @@ figcaption{
     position: absolute;
     left: -15px;
 }
-
-span{
-    font-weight: normal;
- }
