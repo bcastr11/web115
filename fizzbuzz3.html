@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baltazar Castro Luz's Bold Cardinal | WEB115 | Fizz Buzz 3</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    <script src="scripts/fizzbuzz3.js" defer></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Fizz Buzz</h2>
+        <h3 id="greeting">Welcome to Bold Cardinal</h3>
+
+        <form id="nameForm">
+
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" placeholder="Enter your first name" required>
+
+            <label for="middle_initial">Middle Initial (optional)</label>
+            <input type="text" id="middle_initial" placeholder="M" maxlength="1" pattern="[A-Za-z]">
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" placeholder="Enter your last name" required>
+
+            <button type="submit">Generate FizzBuzz</button>
+        </form>
+        <div id="output"></div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
