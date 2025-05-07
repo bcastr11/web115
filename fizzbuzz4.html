@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baltazar Castro Luz's Bold Cardinal | WEB115 | Fizz Buzz 4</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/fizzbuzz4.js" defer></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Fizz Buzz 4</h2>
+        
+        <h3 id="greeting">Welcome to Fizz Buzz</h3>
+        
+        <form id="nameForm">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" placeholder="Enter your first name" required>
+            
+            <label for="middle_initial">Middle Initial (optional)</label>
+            <input type="text" id="middle_initial" placeholder="M" maxlength="1" pattern="[A-Za-z]">
+            
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" placeholder="Enter your last name" required>
+            
+            <h3>Fizzbuzz Settings</h3>
+            
+            <label for="divisor1">First Divisor (e.g., 3)</label>
+            <input type="number" id="divisor1" min="1" value="3" required>
+            
+            <label for="word1">First Word (e.g., Fizz)</label>
+            <input type="text" id="word1" value="Build Different" required>
+            
+            <label for="divisor2">Second Divisor (e.g., 5)</label>
+            <input type="number" id="divisor2" min="1" value="5" required>
+            
+            <label for="word2">Second Word (e.g., Buzz)</label>
+            <input type="text" id="word2" value="Grow!" required>
+            
+            <label for="divisor3">Third Divisor (e.g., 7)</label>
+            <input type="number" id="divisor3" min="1" value="7" required>
+            
+            <label for="word3">Third Word (e.g., Bang)</label>
+            <input type="text" id="word3" value="BANG!" required>
+            
+            <label for="maxNumber">Count up to (max 500)</label>
+            <input type="number" id="maxNumber" min="1" max="500" value="125" required>
+            
+            <button type="submit">Generate Fizz Buzz</button>
+        </form>
+        
+        <div id="output"></div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
